@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body class="theme-light">
+    <main>
+      <section class="todo-header">
+        <h1>Todo</h1>
+        <div class="toggle">
+          <img src="images/icon-moon.svg" alt="icon-moon" class="moon" />
+          <img src="images/icon-sun.svg" alt="icon-sun" class="sun hidden" />
+        </div>
+      </section>
+      <section class="create-todo">
+        <div class="todo-text">
+          <span class="checkmark"></span>
+          <input
+            type="text"
+            name="todo"
+            id="todo"
+            placeholder="Create a new todo..."
+            autocomplete="off"
+          />
+          <a href="#" class="submit">Add</a>
+        </div>
+        <section class="list-todo">
+          <ul>
+            <!-- Todo -->
+          </ul>
+        </section>
+        <div class="todo-text second-todo">
+          <div class="small-text">
+            <div class="items-left">
+              <span class="number-of-items"><!-- Add dynamic number -->0</span>
+              items left
+            </div>
+            <div class="items-select">
+              <span class="all select">All</span>
+              <span class="active select">Active</span>
+              <span class="completed select">Completed</span>
+            </div>
+            <div class="clear-completed">Clear Completed</div>
+          </div>
+        </div>
+      </section>
+      <small>Drag and drop to reorder list</small>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Carla Cheikh</a>.
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
